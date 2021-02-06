@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', [\App\Http\Controllers\MostValuablePlayerController::class, 'index']);
+Route::get('/phpinfo', function (){
+    echo phpinfo();
 });
+
