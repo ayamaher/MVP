@@ -1,5 +1,19 @@
 # MVP
-MVP
+
+For Adding other additional games you need to add 
+1- game text file under ( public/sports ) directory.
+2- create game service class under ( app/http/Services/GamePoints ) directory with game name followed by pointService , this file calculate given game seperate Positions poins rates
+3- create new model for that game player that handle its own different attributes and return its own info to calculate his points
+
+to run the porject 
+clone project files to your local 
+run ( composer install ) command 
+run ( php artisan serve ) command 
+open IP generated you will find the the winner of each compition game 
+
+
+
+#####################################################################
 General Rules
 We need to create a tournament where several players compete in several sports. Right now, the sports played are basketball and handball matches. We plan to add more sports in the future.
 
